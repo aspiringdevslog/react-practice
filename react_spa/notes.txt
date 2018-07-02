@@ -1,0 +1,9 @@
+Reference materials: 
+https://www.kirupa.com/react/creating_single_page_app_react_using_react_router.htm
+
+create-react-app react_spa
+cd react_spa
+npm i react-router-dom --save
+
+Stuff must be capitalized, else it will break. Not sure why, should probably find out #TODO
+
