@@ -7,3 +7,9 @@ npm i react-router-dom --save
 
 Stuff must be capitalized, else it will break. Not sure why, should probably find out #TODO
 
+
+Fixed Footer:
+this is cool, need some adjustments though: https://codepen.io/madshaakansson/pen/CGjcH
+
+Simpler Fixed Footer:
+https://codepen.io/tdevine33/pen/Kwynl

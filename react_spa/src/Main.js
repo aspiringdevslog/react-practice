@@ -7,6 +7,8 @@ import {
 import Home from "./Home";
 import Stuff from "./Stuff";
 import Contact from "./Contact";
+import Test from "./Test";
+import Todo from "./Todo";
 
 // For whatever reason, this won't work but the below will. I should install some form of jslint or jshint or some testing system
 // class Main extends Component {
@@ -40,14 +42,22 @@ class Main extends Component {
             <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/stuff">Stuff</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>
+            <li><NavLink to="/test">Test</NavLink></li>
+            <li><NavLink to="/todo">To Do List</NavLink></li>
           </ul>
           <div className="content">
             <Route exact path="/" component={Home}/> 
             <Route path="/stuff" component={Stuff}/>
-            <Route path="/contact" component={Contact}/>             
+            <Route path="/contact" component={Contact}/>       
+            <Route path="/test" component={Test}/>      
+            <Route path="/todo" component={Todo}/>      
           </div>
+              <div className="fixed_footer footer-flex">  
+                <span class="footer-item2">Footer Copy</span>
+              </div>
         </div>
       </HashRouter>
+
     );
   }
 }
