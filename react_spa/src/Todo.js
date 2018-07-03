@@ -25,7 +25,7 @@ class AddForm extends Component {
 class Items extends Component {
   render() {
     // grab items array from state, map each item in `li`
-    let items = this.props.items.map((item, key) => {
+    let items = this.props.items.map((item, key) => { // it seems map is some form of loop
       return <li className="todo" key={key} onClick={this.handleRemove.bind(this)}>{item}</li>
     })
     return (
@@ -37,6 +37,11 @@ class Items extends Component {
   handleRemove(item) {
     this.props.removeItem(item.currentTarget.innerText) // pass value of item to delete to parent component
   }
+}
+
+/* ===== comppleted list ===== */
+class Completed extends Component {
+
 }
 
 /* ===== parent component ===== */
@@ -51,6 +56,7 @@ class App extends Component {
       <div>
         <AddForm addItem={this.addItem.bind(this)} />
         <Items items={this.state.items} removeItem={this.removeItem.bind(this)} />
+
       </div>
     )
   }
@@ -69,6 +75,10 @@ class App extends Component {
     this.setState({
       items: filtered
     })
+  }
+  transferItem(){
+    // this will display the filtered items in another view
+
   }
   componentWillMount() {
     // load items array from localStorage, set in state
