@@ -4,7 +4,7 @@ import React, { Component } from "react";
 class Form extends Component {
   render(){
     return (
-        <form onSubmit="">
+        <form onSubmit="addItem(input, listItem)">
           <input type="text" ref="listItem" placeholder="Sample form..." />
           <input type="submit" value="Add" />
         </form>

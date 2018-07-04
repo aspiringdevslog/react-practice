@@ -40,9 +40,9 @@ class Items extends Component {
 }
 
 /* ===== comppleted list ===== */
-class Completed extends Component {
+// class Completed extends Component {
 
-}
+// }
 
 /* ===== parent component ===== */
 class App extends Component {

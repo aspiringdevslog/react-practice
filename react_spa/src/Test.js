@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Lorem from "./Lorem"; 
-import Stuff from "./Stuff"; 
 
 
 
